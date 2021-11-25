@@ -18,11 +18,11 @@ ol{
     background-color: yellow;
 }
 
-li.impar{
+ol li:nth-child(odd){
     text-transform: uppercase;
 }
 
-li.par{
+ol li:nth-child(even){
     color: green;
 }
 
