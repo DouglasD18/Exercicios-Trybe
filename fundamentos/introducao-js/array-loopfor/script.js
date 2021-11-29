@@ -38,7 +38,7 @@ for (const number of numbers) {
 console.log(maior);
 
 console.log('Exercício 6');
-impares = [];
+let impares = [];
 for (const number of numbers) {
     if (number % 2 !== 0) {
         impares.push(number);
@@ -60,14 +60,14 @@ for (const number of numbers) {
 console.log(menor);
 
 console.log('Exercício 8');
-vetor = [];
+let vetor = [];
 for (let i = 1; i <= 25; i++) {
     vetor.push(i);  
 }
 console.log(vetor);
 
 console.log('Exercício 9');
-vetor2 = [];
+let vetor2 = [];
 for (const number of vetor) {
     vetor2.push(number / 2);
 }
