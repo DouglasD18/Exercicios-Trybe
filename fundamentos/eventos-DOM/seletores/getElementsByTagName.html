@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementsByTagName</title>
+</head>
+<body>
+    <header>
+        <h2>Título</h2>
+        <p>Dê uma cor para este parágrafo!</p>
+        <h4>Subtítulo</h4>
+        <p>Segundo parágrafo!</p>
+    </header>
+    <script>
+        document.getElementsByTagName("h2")[0].innerText = "Onde os fracos não têm vez";
+        document.getElementsByTagName("p")[0].style.color = "olivedrab"
+        document.getElementsByTagName("h4")[0].innerText = "Tem o melhor psicopata da sétima arte"
+    </script>
+</body>
+</html>
