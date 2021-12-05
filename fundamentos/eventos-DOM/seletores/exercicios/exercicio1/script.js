@@ -20,3 +20,18 @@ function corrije(tagName) {
 }
 corrije('h1');
 
+function upper(tagName) {
+       let texto = document.getElementsByTagName(tagName);
+       for (let i = 0; i < texto.length; i++) {
+              texto[i].innerText.toUpperCase(); 
+       }
+}
+upper('p');
+
+function exibe(tagName) {
+       let exibidos = document.querySelectorAll(tagName).innerText;
+       for (let i = 0; i < exibidos.length; i++) {
+              console.log(exibidos[i]);
+       }
+}
+exibe('p');

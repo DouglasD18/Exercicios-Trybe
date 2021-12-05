@@ -15,7 +15,6 @@ main, section {
     background-color: red;
     width: 50%;
     margin: 0 auto;
-    text-transform: uppercase;
 }
 
 .main-content .center-content p {
