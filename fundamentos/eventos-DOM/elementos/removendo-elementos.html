@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,18 +26,13 @@ Remova todos os elementos filhos de paiDoPai exceto pai , elementoOndeVoceEsta e
  -->
 
     <script>
-        let pai = document.querySelectorAll('#pai');
-        console.log(pai);
-        for (let i = 0; i < pai.length; i++) {
-            let filho = pai[i];
-            if (i != 1){
-                pai.removeChild(filho);
-            }
-        }
-        let aqui = document.querySelectorAll('#elementoOndeVoceEsta');
-        console.log(aqui);
-        let segundo = aqui[1];
-        aqui.removeChild(segundo);
+        let pai = document.getElementById('pai');
+        pai.firstElementChild.remove();
+        pai.lastElementChild.remove();
+        pai.lastElementChild.remove();
+        let elementoOnde = document.querySelector('#elementoOndeVoceEsta');
+        elementoOnde.lastElementChild.remove()
+        elementoOnde.nextSibling.remove()
     </script>
 </body>
 </html>

@@ -20,17 +20,23 @@
         </section>
     </main>
 
+<!-- 
+Crie um irmão para elementoOndeVoceEsta .
+Crie um filho para elementoOndeVoceEsta .
+Crie um filho para primeiroFilhoDoFilho .
+A partir desse filho criado, acesse terceiroFilho .
+ -->
     <script>
-        let irmaoOndeVoceEsta = document.createElement('section');
-        irmaoOndeVoceEsta.innerText = 'Eu sou o primeiro.'
-        document.querySelector('#pai').appendChild(irmaoOndeVoceEsta);
-        let filhoOndeVoceEsta = document.createElement('section');
-        filhoOndeVoceEsta.innerText = 'Segundo elemento criado e adicionado'
-        document.querySelector('#elementoOndeVoceEsta').appendChild(filhoOndeVoceEsta);
-        let filhoDoPrimeiroFilho = document.createElement('section');
-        filhoDoPrimeiroFilho.innerText = 'Filho do primeiro filho do filho';
-        document.querySelector('#primeiroFilhoDoFilho').appendChild(filhoDoPrimeiroFilho);
-        filhoDoPrimeiroFilho.parentElement.parentElement.innerText = 'Elemento onde você está.'
+        let irmao = document.createElement('section')
+        irmao.innerText = 'Eu sou o irmão.'
+        document.getElementById('pai').appendChild(irmao);
+        let filho = document.createElement('section');
+        filho.innerText = 'Eu sou o filho.'
+        document.querySelector('#elementoOndeVoceEsta').appendChild(filho);
+        let outroFilho = document.createElement('section');
+        outroFilho.innerText = 'Vocês já sabem.'
+        let local = document.getElementById('primeiroFilhoDoFilho').appendChild(outroFilho);
+        local.parentElement.parentElement.nextElementSibling.innerText = 'Acessei.'
     </script>
 </body>
 </html>
