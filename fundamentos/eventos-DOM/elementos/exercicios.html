@@ -105,6 +105,16 @@
             cont += 1;
         }
         console.log(main);
+        h1.className = 'title';
+        let h3 = document.getElementsByTagName('h3');
+        for (const tag of h3) {
+            tag.className = 'description';
+        }
+        main.removeChild(left);
+        right.style.marginRight = 'auto';
+        document.querySelector('.center-content').style.backgroundColor = 'green';
+        document.querySelector('ul').lastChild.remove();
+        document.querySelector('ul').lastChild.remove();
     </script>
 </body>
 </html>
