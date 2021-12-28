@@ -29,9 +29,6 @@ function addDaysOfCalendar(dezDaysList){
 }
 addDaysOfCalendar(dezDaysList);
 
-/* Implemente uma função que receba como parâmetro a string "Feriados" e crie dinamicamente um botão com o nome "Feriados".
-Adicione a este botão a ID "btn-holiday" .
-Adicione este botão como filho/filha da tag <div> com classe "buttons-container" . */
 function createButton(string) {
     let button = document.createElement('button');
     button.className = string;
@@ -39,3 +36,29 @@ function createButton(string) {
     document.querySelector('.buttons-container').appendChild(button);
 }
 createButton('Feriados');
+
+/* Implemente uma função que adicione ao botão "Feriados" um evento de "click" que muda a cor de fundo dos dias que possuem a classe "holiday" .
+É interessante que este botão possua também a lógica inversa. Ao ser clicado novamente ele retorna à configuração inicial com a cor "rgb(238,238,238)" */
+let cont = 0;
+function configuraButtonFeriados() {
+    cont += 1;
+    let button = document.querySelector('.Feriados');
+    let feriados = document.querySelectorAll('.holiday');
+    for (let i = 0; i < feriados.length; i++) {
+        console.log(feriados[i]);
+    }
+    if (cont % 2 != 0) {
+        button.addEventListener('click', function() {
+            for (let i = 0; i < feriados.length; i++) {
+                feriados[i].style.backgroundColor = 'aqua';
+            }
+        })
+    } else {
+        button.addEventListener('click', function() {
+            for (let i = 0; i < feriados.length; i++) {
+                feriados[i].style.backgroundColor = "rgb(238,238,238)";
+            }
+        })
+    }
+}
+configuraButtonFeriados();

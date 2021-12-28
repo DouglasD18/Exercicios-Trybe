@@ -39,10 +39,10 @@ a:hover{
   transition: 1s;
 }
 
-li{
-  margin-bottom: 10px;
+ol a:focus {
+  font-weight: bold;
 }
 
-li:visited{
-  font-family: Georgia, 'Times New Roman', Times, serif;
+li{
+  margin-bottom: 10px;
 }
