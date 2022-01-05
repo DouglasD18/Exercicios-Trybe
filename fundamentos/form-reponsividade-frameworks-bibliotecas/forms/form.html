@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário de Currículo</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Digite seu nome:</legend>
+            <textarea name="nome" id="" cols="40" rows="1" required></textarea>
+
+            <legend>Digite seu email:</legend>
+            <textarea name="email" id="" cols="50" rows="1" required></textarea>
+
+            <legend>Digite seu CPF:</legend>
+            <textarea name="cpf" id="" cols="11" rows="1" required></textarea>
+
+            <legend>Digite seu endereço:</legend>
+            <textarea name="endereço" id="" cols="50" rows="4" required></textarea>
+
+            <legend>Digite o nome da sua cidade:</legend>
+            <textarea name="cidade" id="" cols="28" rows="1" required></textarea>
+
+            <legend>Escolha seu estado:</legend>
+            <select name="estado" id="estado" required>
+            </select>
+
+            <label for="casa"><input type="radio" name="tipo" id="casa" checked>Casa</label>
+            <label for="casa"><input type="radio" name="tipo" id="casa">Apartamento</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados do último emprego</legend>
+            <textarea name="curriculo" id="curriculo" cols="50" rows="20" placeholder="Resumo do seu currículo aqui:" required></textarea>
+
+            <legend>Digite o cargo no seu emprego:</legend>
+            <textarea name="" id="" cols="40" rows="1" required></textarea>
+
+            <legend>Descrição do cargo:</legend>
+            <textarea name="" id="" cols="50" rows="10" required></textarea>
+
+            <legend>Data de início:</legend>
+            <input type="date" name="" id="" required>
+        </fieldset>
+    </form>
+
+    <button type="submit">Validar</button>
+    <button type="reset">Limpar</button>
+
+    <div id="dados-validados"></div>
+    <div id="erros"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
