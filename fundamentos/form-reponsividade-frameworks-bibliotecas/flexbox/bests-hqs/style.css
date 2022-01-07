@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(216, 229, 240);
+}
+
+header {
+    max-height: 35%;
+    background-color: #0F5F85;
+}
+
+.header {
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header img{
+    border: 2px solid black;
+}
+
+.header h1{
+    font-family: 'Luxurious Roman', cursive;
+}
+
+.header a {
+    color: black;
+}
+
+.header a:hover{
+    text-decoration: none;
+}
+
+main {
+    width: 65vw;
+    margin: auto;
+    background-color: gray;
+}
+
+main p{
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 18px;
+}
+
+.main-img {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-img img {
+    height: 300px;
+    width: 200px;
+    padding-bottom: 30px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #0F5F85;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer a{
+    margin-right: 10px;
+    text-decoration: none;
+    color: aliceblue;
+}
