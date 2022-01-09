@@ -8,51 +8,59 @@
     <title>Formulário de Currículo</title>
 </head>
 <body>
-    <form action="">
-        <fieldset>
-            <legend>Digite seu nome:</legend>
-            <textarea name="nome" id="" cols="40" rows="1" required></textarea>
+        <header class="corDeFundo">
+            <h1>Formulário de Currículos Personalizado</h1>
+        </header>
 
-            <legend>Digite seu email:</legend>
-            <textarea name="email" id="" cols="50" rows="1" required></textarea>
+        <form action="">
+            <fieldset class="corDeFundo">
+                <p>Digite seu nome:</p>
+                <input class="inputFundo" type="text" id="nome" maxlength="40" required></input>
+    
+                <p>Digite seu email:</p>
+                <input class="inputFundo" type="text" id="email" maxlength="50" required></input>
+    
+                <p>Digite seu CPF:</p>
+                <input class="inputFundo" type="text" id="cpf" maxlength="11" required></input>
+    
+                <p>Digite seu endereço:</p>
+                <input class="inputFundo" type="text" id="endereco" maxlength="200"" required></textarea>
+    
+                <p>Digite o nome da sua cidade:</p>
+                <input class="inputFundo" type="text" id="cidade" maxlength="28" required></input>
+    
+                <p>Escolha seu estado:</p>
+                <select class="inputFundo" name="estado" id="estado" required>
+                </select>
+    
+                <label for="casa"><input type="radio" name="tipo" id="casa" checked>Casa</label>
+                <label for="casa"><input type="radio" name="tipo" id="casa">Apartamento</label>
+            </fieldset>
+    
+            <fieldset class="corDeFundo">
+                <p>Dados do último emprego:</p>
+                <textarea class="inputFundo" name="curriculo" id="curriculo" cols="50" rows="20" placeholder="Resumo do seu currículo aqui:" required></textarea>
+    
+                <p>Digite o cargo no seu emprego:</p>
+                <input class="inputFundo" type="text" id="cargo" maxlength="40" required></input>
+    
+                <p>Descrição do cargo:</p>
+                <input class="inputFundo" type="text" id="description" maxlength="500" required></input>
+    
+                <p>Data de início:</p>
+                <input class="inputFundo" type="text" name="" id="date" required>
+            </fieldset>
+        </form>
+    
+        <section id="buttons">
+            <button type="submit" id="submit">Validar</button>
+        
+            <button type="reset" id="reset">Limpar</button>
+        </section>
 
-            <legend>Digite seu CPF:</legend>
-            <textarea name="cpf" id="" cols="11" rows="1" required></textarea>
 
-            <legend>Digite seu endereço:</legend>
-            <textarea name="endereço" id="" cols="50" rows="4" required></textarea>
-
-            <legend>Digite o nome da sua cidade:</legend>
-            <textarea name="cidade" id="" cols="28" rows="1" required></textarea>
-
-            <legend>Escolha seu estado:</legend>
-            <select name="estado" id="estado" required>
-            </select>
-
-            <label for="casa"><input type="radio" name="tipo" id="casa" checked>Casa</label>
-            <label for="casa"><input type="radio" name="tipo" id="casa">Apartamento</label>
-        </fieldset>
-
-        <fieldset>
-            <legend>Dados do último emprego</legend>
-            <textarea name="curriculo" id="curriculo" cols="50" rows="20" placeholder="Resumo do seu currículo aqui:" required></textarea>
-
-            <legend>Digite o cargo no seu emprego:</legend>
-            <textarea name="" id="" cols="40" rows="1" required></textarea>
-
-            <legend>Descrição do cargo:</legend>
-            <textarea name="" id="" cols="50" rows="10" required></textarea>
-
-            <legend>Data de início:</legend>
-            <input type="date" name="" id="" required>
-        </fieldset>
-    </form>
-
-    <button type="submit">Validar</button>
-    <button type="reset">Limpar</button>
-
-    <div id="dados-validados"></div>
-    <div id="erros"></div>
+    <div id="dados-validados" class="corDeFundo"></div>
+    <div id="erros" class="corDeFundo"></div>
 
     <script src="script.js"></script>
 </body>
