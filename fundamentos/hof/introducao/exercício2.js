@@ -7,7 +7,7 @@ const check = (apostado, sorteado) => {
 };
 
 const doSort = (func, apostado) => {
-  const sorteado = Math.round(Math.random() * 5) + 1;
+  const sorteado = Math.floor(Math.random() * 5) + 1;
   func(apostado, sorteado);
 };
 
