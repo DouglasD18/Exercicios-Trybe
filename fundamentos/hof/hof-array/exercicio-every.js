@@ -61,17 +61,6 @@ const books = [
   },
 ];
 
-function comparar(a, b) {
-  if (a > b) {
-    return -1;
-  }
-  if (a < b) {
-    return 1;
-  }
-  return 0;
-}
-
-
-function booksOrderedByReleaseYearDesc(books) {
-  return books.sort((book1, book2) => comparar(book1.releaseYear, book2.releaseYear));
-}
+function everyoneWasBornOnSecXX(books) {
+  return books.every(book => (book.author.birthYear >= 1900 && book.author.birthYear <= 1999));
+};
