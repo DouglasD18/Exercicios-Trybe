@@ -78,4 +78,9 @@ function oldBooksOrdered() {
   })
 };
 
-console.log(oldBooksOrdered());
+function oldBooks() {
+  const olders = books.filter(book => (2022 - book.releaseYear) > 60);
+  return olders.map(book => `${book.name}`);
+}
+
+console.log(oldBooks());
