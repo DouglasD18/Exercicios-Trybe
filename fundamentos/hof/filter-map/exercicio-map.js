@@ -71,3 +71,8 @@ function nameAndAge() {
 })
   return ageAndName.sort((author1, author2) => author1.age - author2.age);
 }
+
+function oldBooks() {
+  const olders = books.filter(book => (2022 - book.releaseYear) > 60);
+  return olders.map(book => book.name);
+}
