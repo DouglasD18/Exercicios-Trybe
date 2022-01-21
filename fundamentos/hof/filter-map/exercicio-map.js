@@ -64,3 +64,10 @@ const books = [
 function formatedBookNames() {
   return books.map(book => `${book.name} - ${book.genre} - ${book.author.name}`);
 }
+
+function nameAndAge() {
+  const ageAndName = books.map(book => {
+    return {age: (book.releaseYear - book.author.birthYear), author: (book.author.name),}
+})
+  return ageAndName.sort((author1, author2) => author1.age - author2.age);
+}
