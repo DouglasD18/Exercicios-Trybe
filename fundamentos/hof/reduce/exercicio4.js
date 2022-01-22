@@ -6,8 +6,6 @@ function studentAverage() {
     const totalGrade = grade.reduce(((result, current) => result + current), 0);
     return totalGrade / 5;
   })
-  let cont = -1;
-  return students.map(student => {
-    cont++
-    return {name: student, average: gradesAvarege[cont]}})
+  return students.map((student, index) => {
+    return {name: student, average: gradesAvarege[index]}})
 }
