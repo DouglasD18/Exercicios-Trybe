@@ -79,5 +79,3 @@ function longestNamedBook() {
     return result;
   });
 }
-
-console.log(longestNamedBook());
