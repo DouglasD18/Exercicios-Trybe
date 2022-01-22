@@ -71,4 +71,13 @@ function averageAge() {
   return total / 6;
 }
 
-console.log(averageAge());
+function longestNamedBook() {
+  return books.reduce((result, current) => {
+    if (current.name.length > result.name.length) {
+      result = current;
+    }
+    return result;
+  });
+}
+
+console.log(longestNamedBook());
