@@ -65,4 +65,10 @@ function reduceNames() {
   return books.reduce(((result, current) => result.concat(current.author.name)), []);
 }
 
-console.log(reduceNames());
+function averageAge() {
+  const birth = books.map(book => book.releaseYear - book.author.birthYear);
+  const total = birth.reduce((result, current) => result + current);
+  return total / 6;
+}
+
+console.log(averageAge());
