@@ -6,5 +6,3 @@ const toObject = list => {
   const [modelo, construtora, ano] = list;
   return {modelo, construtora, ano};
 }
-
-console.log((toObject(palio)));
