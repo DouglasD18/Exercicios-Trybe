@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
+
+.pokedex {
+  width: 70vw;
+  margin-left: 15vw;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #0A285F;
+}
+
+.pokemon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+  background-color:  #FFCC00;
+  margin: 15px 0;
+  border-radius: 5px;
+}
+
+.info {
+  font-family: 'Shizuru', cursive;
+}
+
+.image {
+  background-color: aliceblue;
+  margin-bottom: 5px;
+}
